@@ -1,0 +1,33 @@
+{
+  "name": "doganddev/changelog-generator",
+  "description": "A Laravel package to create changelogs via a dynamic interface",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "DogAndDev",
+      "email": "contact@doganddev.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DogAndDev\\ChangelogGenerator\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0",
+    "livewire/livewire": "^3.0",
+    "symfony/process": "^7.0",
+    "nesbot/carbon": "^3.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DogAndDev\\ChangelogGenerator\\ChangelogGeneratorServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
